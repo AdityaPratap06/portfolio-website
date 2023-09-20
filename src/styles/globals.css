@@ -105,3 +105,20 @@ a {
     color-scheme: dark;
   }
 }
+
+.rotating-image {
+  animation: rotate 6s linear infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.scroll::-webkit-scrollbar{
+  display: none;
+}
