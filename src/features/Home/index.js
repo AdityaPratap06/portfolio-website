@@ -3,6 +3,7 @@ import React from "react";
 import { Header } from "./Header";
 import { Intro } from "./Intro";
 import { Skills } from "./Skills";
+import { Testimonials } from "./Testimonials";
 
 export const Home = () => {
     return (
@@ -12,6 +13,7 @@ export const Home = () => {
                 <Intro />
             </Box>
             <Skills />
+            <Testimonials />
         </Box>
     )
 }
