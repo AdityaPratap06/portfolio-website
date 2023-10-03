@@ -10,7 +10,7 @@ export const Intro = () => {
         "Project 3: A portfolio website",
     ];
     return (
-        <Flex h="80vh" bg="gray.50">
+        <Flex pt={10} pb={20}>
             <Box w="15%">
             </Box>
             <Flex w="35%" flexDir={"column"} justify="center">

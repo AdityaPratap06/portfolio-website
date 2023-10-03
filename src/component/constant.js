@@ -6,3 +6,14 @@ export const FrontEndIcon = [
     { title: "NextJS", icon: "/nextjs-icon.png" },
     { title: "Redux", icon: "/redux-icon.png" },
 ]
+
+export const BackEndIcon = [
+    { title: "NodeJS", icon: "/node-icon.png" },
+    { title: "ExpressJS", icon: "/express-icon.png" },
+    { title: "MongoDB", icon: "/mongo-icon.png" },
+    { title: "NestJS", icon: "/nestjs-icon.png" },
+]
+
+export const OtherIcon = [
+    { title: "Rest APIs", icon: "/restapi-icon.png" },
+]

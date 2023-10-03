@@ -5,7 +5,7 @@ import { HiOutlineArrowRight } from "react-icons/hi"
 
 export const Header = () => {
     return (
-        <Box bg={"gray.50"} color="black" py={5}>
+        <Box color="black" py={5}>
             <CenterX>
                 <Box w="100%" bg="white" p={3} borderRadius={10}>
                     <Flex justify={"space-between"} align="center">
