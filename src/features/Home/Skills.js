@@ -5,8 +5,10 @@ import React from "react";
 
 export const Skills = () => {
     return (
-        <Box p={20}>
-            <Flex justify={"center"} fontSize={30} fontWeight={"bold"}>Skills</Flex>
+        <Box p={20} id={"skills"}>
+            <Flex justify={"center"} fontSize={30} fontWeight={"bold"}>
+                <Text px={2} borderBottom={"3px solid"}>Skills</Text>
+            </Flex>
             <Flex w="100%">
                 <Box w="15%">
                 </Box>

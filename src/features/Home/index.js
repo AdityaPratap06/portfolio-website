@@ -4,15 +4,19 @@ import { Header } from "./Header";
 import { Intro } from "./Intro";
 import { Skills } from "./Skills";
 import { Testimonials } from "./Testimonials";
+import { Experiences } from "./Experiences";
+import { Education } from "./Education";
 
 export const Home = () => {
     return (
-        <Box>
+        <Box id={"home"}>
             <Box bg="linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(/common-bg.svg)">
                 <Header />
                 <Intro />
             </Box>
             <Skills />
+            <Experiences />
+            <Education />
             <Testimonials />
         </Box>
     )

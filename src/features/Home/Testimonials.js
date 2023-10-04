@@ -69,10 +69,12 @@ export const Testimonials = () => {
         }
     };
     return (
-        <Box bg="gray.50">
+        <Box bg="gray.50" id={"testimonials"}>
             <CenterX>
                 <Box py={20}>
-                    <Flex justify={"center"} fontSize={30} fontWeight={"bold"}>Testimonials</Flex>
+                    <Flex justify={"center"} fontSize={30} fontWeight={"bold"}>
+                        <Text px={2} borderBottom={"3px solid"}>Testimonials</Text>
+                    </Flex>
                     <Box w="70vw" pt={10}>
                         <Carousel
                             responsive={responsive}
