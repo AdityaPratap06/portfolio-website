@@ -1,52 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import { Box } from '@chakra-ui/react';
+import { useState, useEffect } from "react";
+import { Box, Flex } from "@chakra-ui/react";
 
-const Typewriter = ({ items }) => {
-  const [currentItemIndex, setCurrentItemIndex] = useState(0);
-  const [currentText, setCurrentText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [typing, setTyping] = useState(true);
+export const Typewriter = () => {
+  const words = [
+    "Front-end Developer",
+    "React.Js Developer",
+    "Web App Developer"
+  ];
+
+  const [currentWord, setCurrentWord] = useState("");
+  const [index, setIndex] = useState(0);
+  const [forward, setForward] = useState(true);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      const item = items[currentItemIndex];
-      if (!item) {
-        clearInterval(intervalId);
-        return;
-      }
-
-      if (typing) {
-        if (currentIndex === item.length) {
-          setTyping(false);
-          setTimeout(() => {
-            setTyping(true);
-            setCurrentIndex(item.length - 1);
-          }, 1000); // Adjust the pause between items
+    const interval = setInterval(() => {
+      if (forward) {
+        if (currentWord.length < words[index]?.length) {
+          setCurrentWord((prev) => prev + words[index][currentWord.length]);
         } else {
-          setCurrentText((prevText) => prevText + item[currentIndex]);
-          setCurrentIndex((prevIndex) => prevIndex + 1);
+          setForward(false);
         }
       } else {
-        if (currentIndex === 0) {
-          setCurrentItemIndex((prevIndex) =>
-            prevIndex === items.length - 1 ? 0 : prevIndex + 1
-          );
-          setTyping(true);
+        if (currentWord.length > 0) {
+          setCurrentWord((prev) => prev.slice(0, -1));
         } else {
-          setCurrentText((prevText) => prevText.slice(0, -1));
-          setCurrentIndex((prevIndex) => prevIndex - 1);
+          setForward(true);
+          setIndex((prev) => (prev + 1) % words.length);
         }
       }
-    }, 100); // Adjust the typing speed as needed
+    }, 70);
 
-    return () => clearInterval(intervalId);
-  }, [currentIndex, currentItemIndex, items, typing]);
+    return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentWord, forward, index]);
 
   return (
-    <Box>
-      {currentText}
-    </Box>
-  );
+    <Flex>
+      <Flex fontSize={36} fontWeight={"bold"}>I&apos;m a</Flex>
+      <Flex className="word" ml={1} fontSize={36} fontWeight={"bold"} color="blue.500">{currentWord}</Flex>
+    </Flex>
+  )
 };
-
-export default Typewriter;

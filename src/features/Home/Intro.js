@@ -1,14 +1,10 @@
+import { Typewriter } from "@/common/Typewriter";
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import React from "react";
 
 export const Intro = () => {
     const router = useRouter()
-    const portfolioItems = [
-        "Project 1: A web application",
-        "Project 2: A mobile app",
-        "Project 3: A portfolio website",
-    ];
     return (
         <Flex pt={10} pb={20}>
             <Box w="15%">
@@ -16,8 +12,7 @@ export const Intro = () => {
             <Flex w="35%" flexDir={"column"} justify="center">
                 <Text fontSize={36} fontWeight={"bold"}>Hey, I am</Text>
                 <Text fontSize={36} fontWeight={"bold"}>Aditya Pratap Singh</Text>
-                <Text fontSize={36} fontWeight={"bold"}>Front-End Developer</Text>
-                {/* <Typewriter items={portfolioItems} /> */}
+                <Typewriter />
                 <Flex w="80%" flexWrap={"wrap"} my={10}>
                     <Text>Experienced React.js developer with 2 years of expertise. Proficient in creating responsive, high-performance web apps, and fostering collaborative team environments.</Text>
                 </Flex>
