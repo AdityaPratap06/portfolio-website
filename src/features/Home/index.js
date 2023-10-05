@@ -8,6 +8,7 @@ import { Experiences } from "./Experiences";
 import { Education } from "./Education";
 import { FooterTop } from "./FooterTop";
 import { FooterBottom } from "./FooterBottom";
+import { Footer } from "./Footer";
 
 export const Home = () => {
     return (
@@ -21,6 +22,7 @@ export const Home = () => {
             <Education />
             <Testimonials />
             <FooterTop />
+            <Footer />
             <FooterBottom />
         </Box>
     )
