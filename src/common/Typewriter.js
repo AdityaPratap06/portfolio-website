@@ -37,7 +37,7 @@ export const Typewriter = () => {
   return (
     <Flex>
       <Flex fontSize={36} fontWeight={"bold"}>I&apos;m a</Flex>
-      <Flex className="word" ml={1} fontSize={36} fontWeight={"bold"} color="blue.500">{currentWord}</Flex>
+      <Flex className="word" ml={1} fontSize={36} fontWeight={"bold"} color="blue.600">{currentWord}</Flex>
     </Flex>
   )
 };

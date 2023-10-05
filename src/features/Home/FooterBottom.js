@@ -7,7 +7,7 @@ export const FooterBottom = () => {
         window.open("https://www.linkedin.com/in/aditya-mern-full-stack-developer/")
     }
     return (
-        <Flex justify={"center"} bg="#000727" color={"white"} py={5}>
+        <Flex justify={"center"} bg="#000727" color={"white"} py={5} borderTop={"1px solid"} borderColor={"whiteAlpha.300"}>
             Copyright
             <Flex mx={2} align={"center"}><AiOutlineCopyright /></Flex>
             2023 - All Right Reserved
