@@ -17,7 +17,7 @@ export const Intro = () => {
                     <Text>Experienced React.js developer with 2 years of expertise. Proficient in creating responsive, high-performance web apps, and fostering collaborative team environments.</Text>
                 </Flex>
                 <Flex>
-                    <Button onClick={() => router.push("/Aditya-Pratap-Singh-Resume.pdf")}>Download Resume</Button>
+                    <Button colorScheme="teal" onClick={() => router.push("/Aditya-Pratap-Singh-Resume.pdf")}>Download Resume</Button>
                     <Button ml={3} colorScheme="blue" onClick={() => window.open("https://www.linkedin.com/in/aditya-mern-full-stack-developer/")}>Connect Us</Button>
                 </Flex>
             </Flex>

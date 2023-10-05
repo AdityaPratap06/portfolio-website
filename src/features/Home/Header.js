@@ -33,12 +33,10 @@ export const Header = () => {
                                 </Box>
                             ))}
                         </Flex>
-                        <Button colorScheme="blue" rightIcon={<HiOutlineArrowRight />}>Let&apos;s Connect</Button>
+                        <Button colorScheme="blue" rightIcon={<HiOutlineArrowRight />} onClick={() => window.open("https://www.linkedin.com/in/aditya-mern-full-stack-developer/")}>Let&apos;s Connect</Button>
                     </Flex>
                 </Box>
             </CenterX>
         </Box>
     )
 }
-
-// Home Skills Experiences Projects Education
