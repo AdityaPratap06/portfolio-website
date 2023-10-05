@@ -69,9 +69,10 @@ export const Testimonials = () => {
         }
     };
     return (
-        <Box bg="gray.50" id={"testimonials"}>
+        <Box id={"testimonials"} position={"relative"}>
+            <Image pos={"absolute"} w="100%" h="100%" src={'/testimonialbg.jpg'} alt="Work Experience" objectFit={"cover"} opacity={0.4} />
             <CenterX>
-                <Box py={20}>
+                <Box py={20} zIndex={1}>
                     <Flex justify={"center"} fontSize={30} fontWeight={"bold"}>
                         <Text px={2} borderBottom={"3px solid"}>Testimonials</Text>
                     </Flex>

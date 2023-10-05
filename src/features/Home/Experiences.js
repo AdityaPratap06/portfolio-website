@@ -4,15 +4,16 @@ import React from "react";
 
 export const Experiences = () => {
     return (
-        <Box bg="gray.50" py={20} id={"experiences"}>
+        <Box id={"experiences"} position={"relative"}>
+            <Image pos={"absolute"} w="100%" h="100%" src={'/experiencebg.avif'} alt="Work Experience" objectFit={"cover"} opacity={0.4} />
             <CenterX>
-                <Box w="100%">
+                <Box w="100%" zIndex={1} py={20}>
                     <Flex justify={"center"} fontSize={30} fontWeight={"bold"}>
                         <Text px={2} borderBottom={"3px solid"}>Work Experiences</Text>
                     </Flex>
                     <Flex w="100%" mt={10} h="fit-content">
                         <Box w="50%" h="100%">
-                            <Image src={"/work-experience.avif"} alt="Work Experience" />
+                            <Image src={"/experience.png"} alt="Work Experience" />
                         </Box>
                         <Box w="50%" h="100%">
                             <Flex>
@@ -60,6 +61,6 @@ export const Experiences = () => {
                     </Flex>
                 </Box>
             </CenterX>
-        </Box>
+        </Box >
     )
 }
