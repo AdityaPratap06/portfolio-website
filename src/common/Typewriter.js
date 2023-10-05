@@ -28,7 +28,7 @@ export const Typewriter = () => {
           setIndex((prev) => (prev + 1) % words.length);
         }
       }
-    }, 70);
+    }, 100);
 
     return () => clearInterval(interval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
