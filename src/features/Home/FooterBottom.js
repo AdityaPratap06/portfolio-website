@@ -13,7 +13,7 @@ export const FooterBottom = () => {
                 <Flex mx={2} align={"center"}><AiOutlineCopyright /></Flex>
                 2023 - All Right Reserved
             </Flex>
-            <Flex ml={3}>
+            <Flex ml={{ base: 0, sm: 3 }}>
                 Made by <Text ml={2} borderBottom={"2px solid white"} onClick={toLinkedIn} cursor={"pointer"} _hover={{ color: "blue.200", borderColor: "blue.200" }}>Aditya Pratap Singh</Text>
             </Flex>
         </Flex>
