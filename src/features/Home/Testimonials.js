@@ -10,8 +10,8 @@ export const Testimonials = () => {
         {
             id: 1,
             image: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
-            text: "When potential customers are researching you online, they're getting to know you through the content on your website. So understandably, many of them might be skeptical or hesitant to trust you right away.",
-            name: "Manish Rajput",
+            text: "I was looking for someone who can devlop a website for my project and I found Mr. Aditya Pratap Singh. He is so helpful and focused toward his work. He was involved throughout the process from designing to development and worked according to my expectations. I am thankful to him as he deployed to me the project successfully",
+            name: "Rupak Chauhan",
             designation: "Front-end Developer"
         },
         {
@@ -72,11 +72,11 @@ export const Testimonials = () => {
         <Box id={"testimonials"} position={"relative"}>
             <Image pos={"absolute"} w="100%" h="100%" src={'/testimonialbg.jpg'} alt="Work Experience" objectFit={"cover"} opacity={0.4} />
             <CenterX>
-                <Box py={20} zIndex={1}>
+                <Box w="100%" py={20} zIndex={1}>
                     <Flex justify={"center"} fontSize={30} fontWeight={"bold"}>
                         <Text px={2} borderBottom={"3px solid"}>Testimonials</Text>
                     </Flex>
-                    <Box w="70vw" pt={10}>
+                    <Box pt={10} align={"center"}>
                         <Carousel
                             responsive={responsive}
                             draggable={true}
@@ -93,13 +93,13 @@ export const Testimonials = () => {
                                         <Box position={"relative"} w={110} h={55}>
                                             <Image position={"absolute"} border="4px solid" borderColor={"gray.50"} m={1} borderRadius={50} w={100} h={100} zIndex={2} alt={""} src={testimonial.image} />
                                         </Box>
-                                        <Flex flexDir={"column"} bg="white" p={3} pt={16} h="75%" justify="space-between" borderRadius={10}>
+                                        <Flex flexDir={"column"} bg="white" p={3} pt={16} h="85%" justify="space-between" borderRadius={10}>
                                             <Flex h="fit-content" align={"center"}>
                                                 <Box h="100%">
                                                     <FaQuoteLeft />
                                                 </Box>
-                                                <Text w="100%"
-                                                    justify="align"
+                                                <Text w="100%" px={2}
+                                                    textAlign={"justify"}
                                                     sx={{
                                                         "word-wrap": "break-word",
                                                         "white-space": "pre-wrap",
