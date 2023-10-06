@@ -16,10 +16,10 @@ export const Footer = () => {
         { id: 5, title: "Testimonials", href: "testimonials" },
     ]
     return (
-        <Box p={20} bg="#000727" color={"white"}>
+        <Box py={20} bg="#000727" color={"white"}>
             <CenterX>
-                <Flex w="100%" justify={"space-between"}>
-                    <Flex w="40%" flexDir={"column"} align={"flex-start"}>
+                <Flex w="100%" justify={"space-between"} flexDir={{ base: "column", md: "row" }}>
+                    <Flex w={{ base: "100%", md: "40%" }} flexDir={"column"} align={"flex-start"}>
                         <Text fontSize={28} fontWeight={"semibold"}>Aditya</Text>
                         <Text my={5} textAlign={"left"}>I&apos;m Aditya Pratap Singh, an enthusiastic front-end developer with a passion for crafting dynamic and engaging user experiences</Text>
                         <Flex>
@@ -29,7 +29,7 @@ export const Footer = () => {
                             <IconX icon={<AiOutlineInstagram />} link={"https://www.instagram.com/adityajadon_06/"} />
                         </Flex>
                     </Flex>
-                    <Box w="30%" pl={10}>
+                    <Box w={{ w: "100%", md: "30%" }} mt={{ base: 5, md: 0 }} pl={{ base: 0, md: 5, lg: 10 }} pr={{ base: 0, md: 5, lg: 0 }}>
                         <Text textAlign={"left"} mb={5} fontSize={18} fontWeight={"semibold"}>Links</Text>
                         {map(header, h => (
                             <Text textAlign={"left"} cursor={"pointer"} _hover={{ color: "#008FFF" }}
@@ -39,7 +39,7 @@ export const Footer = () => {
                         ))}
 
                     </Box>
-                    <Flex w="25%" flexDir={"column"} align={"flex-start"}>
+                    <Flex w={{ w: "100%", md: "25%" }} mt={{ base: 5, md: 0 }} flexDir={"column"} align={"flex-start"}>
                         <Text mb={5} fontSize={18} fontWeight={"semibold"}>Official Info:</Text>
                         <Flex align={"center"}>
                             <AiOutlineMail />
