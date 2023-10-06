@@ -46,6 +46,10 @@ export const Header = () => {
 }
 
 const MenuDrawer = ({ isOpen, onOpen, onClose }) => {
+    const route = (href) => {
+        document.getElementById(href)?.scrollIntoView({ behavior: "smooth" })
+        onClose()
+    }
     return (
         <Drawer placement="left" isOpen={isOpen} onOpen={onOpen} onClose={onClose}>
             <DrawerOverlay />
@@ -56,9 +60,7 @@ const MenuDrawer = ({ isOpen, onOpen, onClose }) => {
                     <Box>
                         {map(header, head => (
                             <Box mt={2} w={"fit-content"} color={"blue.800"} _hover={{ color: "blue.500" }} cursor={"pointer"} role="group"
-                                onClick={() =>
-                                    document.getElementById(head.href)?.scrollIntoView({ behavior: "smooth" })
-                                }
+                                onClick={() => route(head.href)}
                             >
                                 <Text>{head.title}</Text>
                                 <Flex w="0%" left="0" borderBottom={"3px solid"} borderColor={"blue.500"} borderRadius={20} transition="width 0.3s ease" _groupHover={{ width: '100%' }} />
