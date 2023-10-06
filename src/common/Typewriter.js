@@ -35,9 +35,9 @@ export const Typewriter = () => {
   }, [currentWord, forward, index]);
 
   return (
-    <Flex>
-      <Flex fontSize={36} fontWeight={"bold"}>I&apos;m a</Flex>
-      <Flex className="word" ml={1} fontSize={36} fontWeight={"bold"} color="blue.600">{currentWord}</Flex>
+    <Flex fontSize={{ base: 24, md: 24, lg: 30, xl: 36 }}>
+      <Flex fontWeight={"bold"}>I&apos;m a</Flex>
+      <Flex className="word" ml={1} fontWeight={"bold"} color="blue.600">{currentWord}</Flex>
     </Flex>
   )
 };
