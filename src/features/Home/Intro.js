@@ -31,7 +31,7 @@ export const Intro = () => {
                             <Text mt={-3}>Years</Text>
                         </Flex>
                     </Flex>
-                    <Image src="/Aditya-intro1.png" alt="Aditya" />
+                    <Image h="100%" w="100%" src="/Aditya-intro1.webp" alt="Aditya" />
                 </Box>
             </Flex>
         </CenterX>

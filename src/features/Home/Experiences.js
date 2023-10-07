@@ -5,7 +5,7 @@ import React from "react";
 export const Experiences = () => {
     return (
         <Box id={"experiences"} position={"relative"}>
-            <Image pos={"absolute"} w="100%" h="100%" src={'/experiencebg.avif'} alt="Work Experience" objectFit={"cover"} opacity={0.4} />
+            <Image loading="lazy" pos={"absolute"} w="100%" h="100%" src={'/experiencebg.avif'} alt="Work Experience" objectFit={"cover"} opacity={0.4} />
             <CenterX>
                 <Box w="100%" zIndex={1} py={20}>
                     <Flex justify={"center"} fontSize={30} fontWeight={"bold"}>
@@ -13,7 +13,7 @@ export const Experiences = () => {
                     </Flex>
                     <Flex w="100%" mt={10} h="fit-content" align={"center"} flexDir={{ base: "column", lg: "row" }}>
                         <Box w="50%" h="100%" display={{ base: "none", lg: "flex" }}>
-                            <Image src={"/experience.png"} alt="Work Experience" />
+                            <Image loading={"lazy"} h="100%" w="100%" src={"/experience.png"} alt="Work Experience" />
                         </Box>
                         <Box w={{ base: "100%", lg: "50%" }} h="100%">
                             <Flex>

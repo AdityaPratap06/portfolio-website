@@ -47,7 +47,7 @@ export const Education = () => {
                             </Flex>
                         </Box>
                         <Box w="50%" h="100%" display={{ base: "none", lg: "flex" }}>
-                            <Image src={"/education.png"} alt="Education" />
+                            <Image loading="lazy" h="100%" w="100%" src={"/education.png"} alt="Education" />
                         </Box>
                     </Flex>
                 </Box>

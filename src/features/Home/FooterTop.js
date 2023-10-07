@@ -8,7 +8,7 @@ export const FooterTop = () => {
     const router = useRouter()
     return (
         <Box position={"relative"} bg="blue.900">
-            <Image pos={"absolute"} w="100%" h="100%" src={'/hireme.jpeg'} alt="" objectFit={"cover"} opacity={.2} />
+            <Image loading={"lazy"} pos={"absolute"} w="100%" h="100%" src={'/hireme.jpeg'} alt="" objectFit={"cover"} opacity={.2} />
             <CenterX>
                 <Flex py={20} w="100%" flexDir={{ base: "column", md: "row" }} h="fit-content" zIndex={10} justify={"space-between"}>
                     <Flex w={{ base: "100%", md: "50%" }} flexDir={"column"} color="white" align="flex-start">

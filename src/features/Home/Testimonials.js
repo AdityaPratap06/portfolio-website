@@ -91,7 +91,7 @@ export const Testimonials = () => {
                                 <Box mx={3} mb={10} h="100%" >
                                     <Box w="100%" h="100%">
                                         <Box position={"relative"} w={110} h={55}>
-                                            <Image position={"absolute"} border="4px solid" borderColor={"gray.50"} m={1} borderRadius={50} w={100} h={100} zIndex={2} alt={""} src={testimonial.image} />
+                                            <Image loading={"lazy"} position={"absolute"} border="4px solid" borderColor={"gray.50"} m={1} borderRadius={50} w={100} h={100} zIndex={2} alt={""} src={testimonial.image} />
                                         </Box>
                                         <Flex flexDir={"column"} bg="white" p={3} pt={16} h="85%" justify="space-between" borderRadius={10}>
                                             <Flex h="fit-content" align={"center"}>
