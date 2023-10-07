@@ -4,12 +4,12 @@ import { Box } from "@chakra-ui/react"
 import React, { useEffect } from "react"
 
 const HomePage = () => {
-    useEffect(() => {
-        const socket = new WebSocket('ws://mywebsocketserver.com/chat'); //ws://localhost:3000/socket
-        return () => {
-            socket.close();
-        };
-    }, []);
+    // useEffect(() => {
+    //     const socket = new WebSocket('ws://mywebsocketserver.com/chat'); //ws://localhost:3000/socket
+    //     return () => {
+    //         socket.close();
+    //     };
+    // }, []);
 
     return (
         <div>
