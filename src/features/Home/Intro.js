@@ -13,7 +13,7 @@ export const Intro = () => {
                     <Text fontSize={{ base: 24, md: 24, lg: 30, xl: 36 }} fontWeight={"bold"}>Hey, I am</Text>
                     <Text fontSize={{ base: 24, md: 24, lg: 30, xl: 36 }} fontWeight={"bold"}>Aditya Pratap Singh</Text>
                     <Typewriter />
-                    <Flex w="80%" flexWrap={"wrap"} my={10}>
+                    <Flex w={{ base: "100%", md: "80%" }} flexWrap={"wrap"} my={10}>
                         <Text textAlign={"justify"}>Experienced React.js developer with 2 years of expertise. Proficient in creating responsive, high-performance web apps, and fostering collaborative team environments.</Text>
                     </Flex>
                     <Flex>
