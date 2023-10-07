@@ -20,7 +20,6 @@ export const Home = () => {
             </Box>
             <Skills />
             <Experiences />
-            <Projects />
             <Education />
             <Testimonials />
             <FooterTop />

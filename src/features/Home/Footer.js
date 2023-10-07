@@ -56,9 +56,9 @@ export const Footer = () => {
     )
 }
 
-const IconX = ({ icon }) => {
+const IconX = ({ icon, link }) => {
     return (
-        <Flex w={38} h={38} p={4} mr={3} align={"center"} justify={"center"} borderRadius={"50%"} bg="whiteAlpha.200" role="group" _hover={{ bg: "#008FFF" }}>
+        <Flex w={38} h={38} p={4} mr={3} align={"center"} justify={"center"} borderRadius={"50%"} bg="whiteAlpha.200" role="group" _hover={{ bg: "#008FFF" }} onClick={() => window.open(link)}>
             <Flex color="whiteAlpha.600" _groupHover={{ color: "white" }}>{icon}</Flex>
         </Flex>
     )
