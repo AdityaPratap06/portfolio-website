@@ -12,41 +12,48 @@ export const Skills = () => {
             </Flex>
             <CenterX>
                 <Box w="100%" mt={10}>
-                    <Flex flexDir={{ base: "column", md: "row" }}>
-                        <Flex w={{ base: "100%", md: "50%" }}>
+
+                    <Flex flexDir={"column"}>
+                        <Flex w={"100%"}>
                             <Text fontSize={{ base: 24, md: 24, lg: 30, xl: 36 }} fontWeight={"semibold"}>Front-end:</Text>
                         </Flex>
-                        <Flex w={{ base: "100%", md: "50%" }} flexWrap={"wrap"}>
+                        <Flex w={"100%"} flexWrap={"wrap"} justify={"flex-start"}>
                             {map(FrontEndIcon, icon => (
-                                <Box w={95} p={2} align="center">
-                                    <Image w="100%" h="60pt" objectFit={"contain"} src={icon.icon} alt={icon.title} />
-                                    <Text mt={2} fontSize={17} fontWeight={"semibold"}>{icon.title}</Text>
+                                <Box w={{ base: "50%", sm: "33.33%", md: "20%" }} align="center" px={2} my={2}>
+                                    <Box className="box" p={2}>
+                                        <Image h="60pt" objectFit={"contain"} src={icon.icon} alt={icon.title} />
+                                        <Text mt={2} fontSize={17} fontWeight={"semibold"}>{icon.title}</Text>
+                                    </Box>
                                 </Box>
                             ))}
                         </Flex>
                     </Flex>
-                    <Flex mt={5} flexDir={{ base: "column", md: "row" }}>
-                        <Flex w={{ base: "100%", md: "50%" }}>
+                    <Flex flexDir={"column"} mt={10}>
+                        <Flex w={"100%"}>
                             <Text fontSize={{ base: 24, md: 24, lg: 30, xl: 36 }} fontWeight={"semibold"}>Back-end:</Text>
                         </Flex>
-                        <Flex w={{ base: "100%", md: "50%" }} flexWrap={"wrap"}>
+                        <Flex w={"100%"} flexWrap={"wrap"} justify={"flex-start"}>
                             {map(BackEndIcon, icon => (
-                                <Box w={95} p={2} align="center">
-                                    <Image w="100%" h="60pt" objectFit={"contain"} src={icon.icon} alt={icon.title} />
-                                    <Text mt={2} fontSize={17} fontWeight={"semibold"}>{icon.title}</Text>
+                                <Box w={{ base: "50%", sm: "33.33%", md: "20%" }} align="center" px={2} my={2}>
+                                    <Box className="box" p={2}>
+                                        <Image h="60pt" objectFit={"contain"} src={icon.icon} alt={icon.title} />
+                                        <Text mt={2} fontSize={17} fontWeight={"semibold"}>{icon.title}</Text>
+                                    </Box>
                                 </Box>
                             ))}
                         </Flex>
                     </Flex>
-                    <Flex mt={5} flexDir={{ base: "column", md: "row" }}>
-                        <Flex w={{ base: "100%", md: "50%" }}>
+                    <Flex flexDir={"column"} mt={10}>
+                        <Flex w={"100%"}>
                             <Text fontSize={{ base: 24, md: 24, lg: 30, xl: 36 }} fontWeight={"semibold"}>Other:</Text>
                         </Flex>
-                        <Flex w={{ base: "100%", md: "50%" }} flexWrap={"wrap"}>
+                        <Flex w={"100%"} flexWrap={"wrap"} justify={"flex-start"}>
                             {map(OtherIcon, icon => (
-                                <Box w={95} p={2} align="center">
-                                    <Image w="100%" h="60pt" objectFit={"contain"} src={icon.icon} alt={icon.title} />
-                                    <Text mt={2} fontSize={17} fontWeight={"semibold"}>{icon.title}</Text>
+                                <Box w={{ base: "50%", sm: "33.33%", md: "20%" }} align="center" px={2} my={2}>
+                                    <Box className="box" p={2}>
+                                        <Image h="60pt" objectFit={"contain"} src={icon.icon} alt={icon.title} />
+                                        <Text mt={2} fontSize={17} fontWeight={"semibold"}>{icon.title}</Text>
+                                    </Box>
                                 </Box>
                             ))}
                         </Flex>
