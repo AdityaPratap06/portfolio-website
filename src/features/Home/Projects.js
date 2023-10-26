@@ -15,30 +15,35 @@ export const Projects = () => {
             tags: ["HTML", "CSS", "JavaScript", "React.Js", "Next.Js", "Chakra ui"],
             link: "https://aditya-portfolio-website.vercel.app/",
             content: [
-                "Developed a fully responsive personal portfolio website showcasing my skills,Experience, projects, and achievements, enhancing my online presence and professional branding",
-                "Crafted an engaging and visually appealing design using HTML, CSS, and JavaScript, React.js, Next.js & Chakra ui ensuring optimal display on various devices and screen sizes"
+                "Developed a fully responsive personal portfolio website showcasing my skills,Experience, projects, and achievements, enhancing my online presence and professional branding.",
+                "Crafted an engaging and visually appealing design using HTML, CSS, and JavaScript, React.js, Next.js & Chakra ui ensuring optimal display on various devices and screen sizes."
             ]
         },
-        // {
-        //     id: 2,
-        //     name: "Personal Portfolio Website",
-        //     img: "portfolio.png",
-        //     tags: ["HTML", "CSS", "JavaScript", "React.Js", "Next.Js", "Chakra ui"],
-        //     content: [
-        //         "Developed a fully responsive personal portfolio website showcasing my skills,Experience, projects, and achievements, enhancing my online presence and professional branding",
-        //         "Crafted an engaging and visually appealing design using HTML, CSS, and JavaScript, React.js, Next.js & Chakra ui ensuring optimal display on various devices and screen sizes"
-        //     ]
-        // },
-        // {
-        //     id: 3,
-        //     name: "Personal Portfolio Website",
-        //     img: "portfolio.png",
-        //     tags: ["HTML", "CSS", "JavaScript", "React.Js", "Next.Js", "Chakra ui"],
-        //     content: [
-        //         "Developed a fully responsive personal portfolio website showcasing my skills,Experience, projects, and achievements, enhancing my online presence and professional branding",
-        //         "Crafted an engaging and visually appealing design using HTML, CSS, and JavaScript, React.js, Next.js & Chakra ui ensuring optimal display on various devices and screen sizes"
-        //     ]
-        // },
+        {
+            id: 2,
+            name: "Coaching Log",
+            img: "coachinglog.png",
+            tags: ["HTML", "CSS", "JavaScript", "React.Js", "Next.Js", "Nest.Js", "MongoDB", "Chakra ui"],
+            link: "http://localhost:3000/coaching-log",
+            // link: "https://aditya-portfolio-website.vercel.app/coaching-log",
+            content: [
+                "Conceptualized and developed a comprehensive student enquiry management system, streamlining the entire process from initial inquiry to admission for educational institutes.",
+                "Employed JavaScript, Next.js, Nest.js, and Redux to build a robust and responsive front-end, while ensuring seamless data flow between components"
+            ]
+        },
+        {
+            id: 3,
+            name: "NewsFeed Website",
+            img: "news-main.png",
+            tags: ["HTML", "CSS", "JavaScript", "React.Js", "Chakra ui", "SWR"],
+            link: "http://localhost:3000/newsfeed-website",
+            // link: "https://aditya-portfolio-website.vercel.app/newsfeed-website",
+            content: [
+                "Lead the design and implementation of a dynamic NewsFeed platform, enabling institutes and coaching centers to seamlessly share photos, videos, polls, and events with staff and parents.",
+                "Integrated interactive features that enhanced user engagement, such as real-time updates and notifications for new content.",
+                "Leveraged technologies including JavaScript, React.js, Next.js, and SWR to ensure efficient data fetching and a smooth user experience."
+            ]
+        },
         // {
         //     id: 1,
         //     name: "Personal Portfolio Website",
