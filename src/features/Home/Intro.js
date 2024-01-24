@@ -14,11 +14,11 @@ export const Intro = () => {
                     <Text fontSize={{ base: 24, md: 24, lg: 30, xl: 36 }} fontWeight={"bold"}>Aditya Pratap Singh</Text>
                     <Typewriter />
                     <Flex w={{ base: "100%", md: "80%" }} flexWrap={"wrap"} my={10}>
-                        <Text textAlign={"justify"}>Experienced React.js developer with 2 years of expertise. Proficient in creating responsive, high-performance web apps, and fostering collaborative team environments.</Text>
+                        <Text textAlign={"justify"}>Experienced React.js developer with 2 years of expertise. Proficient in creating responsive, high-performance web apps, and fostering collaborative team environment.</Text>
                     </Flex>
                     <Flex>
-                        <Button size={{ base: 'sm', md: "md" }} colorScheme="teal" onClick={() => router.push("/Aditya-Pratap-Singh-Resume.pdf")}>Download Resume</Button>
-                        <Button size={{ base: 'sm', md: "md" }} ml={3} colorScheme="blue" onClick={() => window.open("https://www.linkedin.com/in/aditya-mern-full-stack-developer/")}>Connect Us</Button>
+                        <Button size={{ base: 'sm', md: "md" }} colorScheme="teal" src={"/Aditya-Pratap-Singh-Resume.pdf"} onClick={() => window.open("/Aditya-Pratap-Singh-Resume.pdf")}>Download Resume</Button>
+                        <Button size={{ base: 'sm', md: "md" }} ml={3} colorScheme="blue" onClick={() => window.open("https://www.linkedin.com/in/aditya-mern-full-stack-developer/")}>Contact Me</Button>
                     </Flex>
                 </Flex>
                 <Box pt={10} w={{ base: "100%", md: "50%" }} position={"relative"} justify="center">

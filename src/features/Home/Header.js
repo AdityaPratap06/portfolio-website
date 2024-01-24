@@ -10,7 +10,7 @@ const header = [
     { id: 2, title: "Skills", href: "skills" },
     { id: 3, title: "Experiences", href: "experiences" },
     { id: 4, title: "Projects", href: "projects" },
-    { id: 5, title: "Education", href: "education" },
+    // { id: 5, title: "Education", href: "education" },
     { id: 5, title: "Testimonials", href: "testimonials" },
 ]
 export const Header = () => {
@@ -24,7 +24,7 @@ export const Header = () => {
                             <IconButton display={{ base: "flex", xl: "none" }} onClick={onOpen} variant={"outline"} icon={<VscThreeBars />} />
                             <Heading ml={{ base: 3, xl: 0 }} size={"md"}>Aditya&apos;s Portfolio</Heading>
                         </Flex>
-                        <Flex display={{ base: "none", xl: "flex" }} w={"50%"} justify={"space-between"} fontWeight={"semibold"}>
+                        <Flex display={{ base: "none", xl: "flex" }} w={"40%"} justify={"space-between"} fontWeight={"semibold"}>
                             {map(header, head => (
                                 <Box w={"fit-content"} _hover={{ color: "blue.500" }} cursor={"pointer"} role="group"
                                     onClick={() =>

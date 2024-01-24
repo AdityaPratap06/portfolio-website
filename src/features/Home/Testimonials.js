@@ -9,45 +9,24 @@ export const Testimonials = () => {
     const testimonials = [
         {
             id: 1,
-            image: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
-            text: "I was looking for someone who can devlop a website for my project and I found Mr. Aditya Pratap Singh. He is so helpful and focused toward his work. He was involved throughout the process from designing to development and worked according to my expectations. I am thankful to him as he deployed to me the project successfully",
+            image: "",
+            text: "Aditya Pratap Singh's sports betting website is a game-changer! The sleek design and user-friendly interface make betting a breeze. The live betting feature adds excitement, while fast loading times ensure a seamless experience. Trustworthy and secure, this platform is a winner. Kudos to Aditya for creating a site that truly elevates the sports betting experience!",
+            name: "Samrat Singh Tanwar",
+            designation: "Mobile Engineer"
+        },
+        {
+            id: 2,
+            image: "",
+            text: "Exceptional service! The website created surpassed my expectations. The design is modern, user-friendly, and perfectly represents my brand. The attention to detail and prompt communication made the entire process seamless. I highly recommend their expertise for anyone seeking a professional and visually stunning website. Truly satisfied with the results!",
+            name: "Kritika Gupta",
+            designation: ""
+        },
+        {
+            id: 2,
+            image: "",
+            text: "I can't express how pleased I am with my new website! It's like they read my mind and brought my vision to life. The design is not only visually stunning but also super easy to navigate. Working together was a breeze, and the end result exceeded all my expectations. Highly recommend for anyone looking to up their online game!",
             name: "Rupak Chauhan",
-            designation: "Front-end Developer"
-        },
-        {
-            id: 2,
-            image: "https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg",
-            text: "When potential customers are researching you online, they're getting to know you through the content on your website. So understandably, many of them might be skeptical or hesitant to trust you right away.",
-            name: "Manish Rajput",
-            designation: "Front-end Developer"
-        },
-        {
-            id: 1,
-            image: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
-            text: "When potential customers are researching you online, they're getting to know you through the content on your website. So understandably, many of them might be skeptical or hesitant to trust you right away.",
-            name: "Manish Rajput",
-            designation: "Front-end Developer"
-        },
-        {
-            id: 2,
-            image: "https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg",
-            text: "When potential customers are researching you online, they're getting to know you through the content on your website. So understandably, many of them might be skeptical or hesitant to trust you right away.",
-            name: "Manish Rajput",
-            designation: "Front-end Developer"
-        },
-        {
-            id: 1,
-            image: "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
-            text: "When potential customers are researching you online, they're getting to know you through the content on your website. So understandably, many of them might be skeptical or hesitant to trust you right away.",
-            name: "Manish Rajput",
-            designation: "Front-end Developer"
-        },
-        {
-            id: 2,
-            image: "https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg",
-            text: " tdably, many of them might be skeptical or hesitant to trust you right away.",
-            name: "Manish Rajput",
-            designation: "Front-end Developer"
+            designation: ""
         },
     ]
 
@@ -91,7 +70,7 @@ export const Testimonials = () => {
                                 <Box mx={3} mb={10} h="100%" >
                                     <Box w="100%" h="100%">
                                         <Box position={"relative"} w={110} h={55}>
-                                            <Image loading={"lazy"} position={"absolute"} border="4px solid" borderColor={"gray.50"} m={1} borderRadius={50} w={100} h={100} zIndex={2} alt={""} src={testimonial.image} />
+                                            <Image loading={"lazy"} position={"absolute"} border="4px solid" borderColor={"gray.50"} m={1} borderRadius={50} w={100} h={100} zIndex={2} alt={""} src={testimonial.image? testimonial.image: "/user-img.png"} />
                                         </Box>
                                         <Flex flexDir={"column"} bg="white" p={3} pt={16} h="85%" justify="space-between" borderRadius={10}>
                                             <Flex h="fit-content" align={"center"}>
@@ -111,7 +90,7 @@ export const Testimonials = () => {
                                                     <FaQuoteRight />
                                                 </Flex>
                                             </Flex>
-                                            <Box bg="white" py={5}>
+                                            <Box bg="white" py={5} h={90}>
                                                 <Text fontSize={20} fontWeight={"semibold"}>{testimonial.name}</Text>
                                                 <Text fontSize={14} color={"gray.500"}>{testimonial.designation}</Text>
                                             </Box>

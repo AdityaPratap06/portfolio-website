@@ -12,7 +12,7 @@ export const Footer = () => {
         { id: 2, title: "Skills", href: "skills" },
         { id: 3, title: "Experiences", href: "experiences" },
         { id: 4, title: "Projects", href: "projects" },
-        { id: 5, title: "Education", href: "education" },
+        // { id: 5, title: "Education", href: "education" },
         { id: 5, title: "Testimonials", href: "testimonials" },
     ]
     return (
@@ -21,7 +21,7 @@ export const Footer = () => {
                 <Flex w="100%" justify={"space-between"} flexDir={{ base: "column", md: "row" }}>
                     <Flex w={{ base: "100%", md: "40%" }} flexDir={"column"} align={"flex-start"}>
                         <Text fontSize={28} fontWeight={"semibold"}>Aditya</Text>
-                        <Text my={5} textAlign={"left"}>I&apos;m Aditya Pratap Singh, an enthusiastic front-end developer with a passion for crafting dynamic and engaging user experiences.</Text>
+                        <Text my={5} textAlign={"left"}>I&apos;m Aditya Pratap Singh, an enthusiastic front-end developer with a passion for crafting dynamic and engaging user experience.</Text>
                         <Flex>
                             <IconX icon={<AiFillLinkedin />} link={"https://www.linkedin.com/in/aditya-mern-full-stack-developer/"} />
                             <IconX icon={<FaFacebookF />} link={"https://www.facebook.com/aditya.jadon.52056"} />

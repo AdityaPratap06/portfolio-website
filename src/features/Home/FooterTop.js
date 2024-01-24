@@ -19,9 +19,9 @@ export const FooterTop = () => {
                     <Flex w={{ base: "100%", md: "50%", lg: "40%" }} mt={{ base: 5, md: 0 }} flexDir={"column"} color="white" align="flex-start" justify={"space-between"}>
                         <VStack align={"flex-start"}>
                             <Text textAlign={"left"} fontSize={16}>I&apos;m a Front-end Developer in React.Js</Text>
-                            <Text textAlign={"left"} fontSize={16}>with 2 Years of Experiences.</Text>
+                            <Text textAlign={"left"} fontSize={16}>with 2 Years of Experience.</Text>
                         </VStack>
-                        <Button mt={{ base: 5, md: 0 }} colorScheme="blue" rightIcon={<BsDownload />} onClick={() => router.push("/Aditya-Pratap-Singh-Resume.pdf")}>Download CV</Button>
+                        <Button mt={{ base: 5, md: 0 }} colorScheme="blue" rightIcon={<BsDownload />} onClick={() => window.open("/Aditya-Pratap-Singh-Resume.pdf")}>Download CV</Button>
                     </Flex>
                 </Flex>
             </CenterX>
