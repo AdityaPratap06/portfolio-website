@@ -44,16 +44,22 @@ export const Projects = () => {
                 "Leveraged technologies including JavaScript, React.js, Next.js, and SWR to ensure efficient data fetching and a smooth user experience."
             ]
         },
-        // {
-        //     id: 1,
-        //     name: "Personal Portfolio Website",
-        //     img: "portfolio.png",
-        //     tags: ["HTML", "CSS", "JavaScript", "React.Js", "Next.Js", "Chakra ui"],
-        //     content: [
-        //         "Developed a fully responsive personal portfolio website showcasing my skills,Experience, projects, and achievements, enhancing my online presence and professional branding",
-        //         "Crafted an engaging and visually appealing design using HTML, CSS, and JavaScript, React.js, Next.js & Chakra ui ensuring optimal display on various devices and screen sizes"
-        //     ]
-        // },
+        {
+            id: 3,
+            name: "The Blogging Buzz",
+            img: "thebloggingbuzz.png",
+            tags: ["HTML", "CSS", "JavaScript", "React.Js", "Chakra ui", "Node.Js", "MongoDB", "Express"],
+            link: "https://blog-website-web.vercel.app/",
+            content: [
+                "Responsive Design: Ensures a seamless viewing experience across various devices.",
+                "User-Friendly Interface: Intuitive navigation for easy exploration of content.",
+                "Categories and Tags: Organized content for effortless filtering and discovery.",
+                "Search Functionality: Enables users to find specific topics quickly.",
+                "Interactive Elements: Includes features like comment sections and social media sharing for enhanced user engagement.",
+                "SEO Optimized: Implemented strategies for improved search engine visibility.",
+                "Encourage visitors to explore the blog or engage with the content through a clear call-to-action."
+            ]
+        },
     ]
     const [isHovered, setHovered] = useState(false);
     return (
