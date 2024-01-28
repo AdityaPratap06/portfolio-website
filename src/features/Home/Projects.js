@@ -48,7 +48,7 @@ export const Projects = () => {
             id: 3,
             name: "The Blogging Buzz",
             img: "thebloggingbuzz.png",
-            tags: ["HTML", "CSS", "JavaScript", "React.Js", "Chakra ui", "Node.Js", "MongoDB", "Express"],
+            tags: ["HTML", "CSS", "JavaScript", "React.Js", "Next.Js", "Chakra ui", "Node.Js", "MongoDB", "Express"],
             link: "https://blog-website-web.vercel.app/",
             content: [
                 "Responsive Design: Ensures a seamless viewing experience across various devices.",
