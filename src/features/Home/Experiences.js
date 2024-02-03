@@ -26,6 +26,10 @@ export const Experiences = () => {
                                     <Text fontSize={18} textAlign={"left"} fontWeight={"semibold"}>Software Developer 1 | Schoollog</Text>
                                     <UnorderedList mt={2} textAlign={"left"} fontSize={14}>
                                         <ListItem>Collaborated in the development of [Schoollog, Hostellog, NewsFeed, Coachinglog, COCO, GCI]</ListItem>
+                                        <ListItem>Designed and developed scalable web applications using modern technologies such as HTML, CSS, JavaScript, React.Js, Next.Js, TypeScript, Redux, Chakra UI, Ant Design, Rest APIs.</ListItem>
+                                        <ListItem>Implemented responsive and intuitive user interfaces, focusing on usability and accessibility principles</ListItem>
+                                        <ListItem>Collaborated with product managers and designers to translate requirements into technical specifications and deliverables</ListItem>
+                                        <ListItem>Stayed updated on emerging technologies and industry trends to continuously improve skills and drive innovation in software development</ListItem>
                                     </UnorderedList>
                                 </Flex>
                             </Flex>
