@@ -43,7 +43,10 @@ export const Experiences = () => {
                                     <Text fontSize={18} textAlign={"left"} fontWeight={"semibold"}>Developer Trainee | Schoollog</Text>
                                     <UnorderedList mt={2} textAlign={"left"} fontSize={14}>
                                         <ListItem>Gained expertise in React.js through hands-on projects</ListItem>
+                                        <ListItem>Worked closely with senior developers to understand project requirements, coding standards, and best practices.</ListItem>
+                                        <ListItem>Participated in code reviews, incorporating feedback to enhance code quality and align with established coding conventions.</ListItem>
                                         <ListItem>Contributed to live projects within the organization</ListItem>
+                                        <ListItem>Gained exposure to the software development lifecycle, from requirements gathering to testing and deployment.</ListItem>
                                     </UnorderedList>
                                 </Flex>
                             </Flex>
@@ -58,6 +61,7 @@ export const Experiences = () => {
                                     <UnorderedList mt={2} textAlign={"left"} fontSize={14}>
                                         <ListItem>Developed websites using JavaScript, Node.js, Express.js, MongoDB, and React.js</ListItem>
                                         <ListItem>Acquired skills in full-stack development, front-end, and back-end fundamentals</ListItem>
+                                        <ListItem>Actively sought learning opportunities, attending internal workshops, training sessions, and industry events to enhance technical skills.</ListItem>
                                     </UnorderedList>
                                 </Flex>
                             </Flex>
