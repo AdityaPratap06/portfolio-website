@@ -28,7 +28,7 @@ export const ProjectPreview = () => {
     return (
         <Box>
             <CenterX>
-                <Box>
+                <Box pb={5}>
                     {map((query.slug === "coaching-log" ? coachinglog : query.slug === "newsfeed-website" ? newsFeed : ''), img => (
                         img.url ?
                             <Image mt={5} border={"1px solid"} borderColor={"gray.200"} borderRadius={10} src={img.url} alt="" />

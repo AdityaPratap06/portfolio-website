@@ -1,6 +1,7 @@
 import { CenterX } from "@/common/CenterX";
 import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, Heading, IconButton, Text, useDisclosure } from "@chakra-ui/react";
 import { map } from "lodash";
+import { useRouter } from "next/router";
 import React from "react";
 import { HiOutlineArrowRight } from "react-icons/hi"
 import { VscThreeBars } from "react-icons/vsc"
@@ -13,7 +14,8 @@ const header = [
     // { id: 5, title: "Education", href: "education" },
     { id: 5, title: "Testimonials", href: "testimonials" },
 ]
-export const Header = () => {
+export const Header = ({ preview }) => {
+    const router = useRouter()
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <Box color="black" py={5}>
@@ -28,7 +30,10 @@ export const Header = () => {
                             {map(header, head => (
                                 <Box w={"fit-content"} _hover={{ color: "blue.500" }} cursor={"pointer"} role="group"
                                     onClick={() =>
-                                        document.getElementById(head.href)?.scrollIntoView({ behavior: "smooth" })
+                                        preview ?
+                                            router.push("/")
+                                            :
+                                            document.getElementById(head.href)?.scrollIntoView({ behavior: "smooth" })
                                     }
                                 >
                                     <Text>{head.title}</Text>
@@ -40,8 +45,8 @@ export const Header = () => {
                     </Flex>
                 </Box>
                 <MenuDrawer isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
-            </CenterX>
-        </Box>
+            </CenterX >
+        </Box >
     )
 }
 

@@ -2,11 +2,13 @@ import { CenterX } from "@/common/CenterX";
 import VideoPlayer from "@/component/VideoPlayer";
 import { Box, Button, Flex, Image, ListItem, Tag, Text, UnorderedList } from "@chakra-ui/react";
 import { map } from "lodash";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { BiLinkExternal } from "react-icons/bi"
 
 export const Projects = () => {
-
+    const router = useRouter()
+    
     const projects = [
         {
             id: 1,
@@ -24,7 +26,7 @@ export const Projects = () => {
             name: "Coaching Log",
             img: "coachinglog.png",
             tags: ["HTML", "CSS", "JavaScript", "React.Js", "Next.Js", "Nest.Js", "MongoDB", "Chakra ui"],
-            link: "http://localhost:3000/coaching-log",
+            path: "/coaching-log",
             // link: "https://aditya-portfolio-website.vercel.app/coaching-log",
             content: [
                 "Conceptualized and developed a comprehensive student enquiry management system, streamlining the entire process from initial inquiry to admission for educational institutes.",
@@ -36,7 +38,7 @@ export const Projects = () => {
             name: "NewsFeed Website",
             img: "news-main.png",
             tags: ["HTML", "CSS", "JavaScript", "React.Js", "Chakra ui", "SWR"],
-            link: "http://localhost:3000/newsfeed-website",
+            path: "/newsfeed-website",
             // link: "https://aditya-portfolio-website.vercel.app/newsfeed-website",
             content: [
                 "Lead the design and implementation of a dynamic NewsFeed platform, enabling institutes and coaching centers to seamlessly share photos, videos, polls, and events with staff and parents.",
@@ -62,6 +64,11 @@ export const Projects = () => {
         },
     ]
     const [isHovered, setHovered] = useState(false);
+
+    const showPreview = (url) => {
+        router.push(url)
+    }
+
     return (
         <Box bg="gray.50" py={20} id={"projects"}>
             <CenterX>
@@ -75,7 +82,7 @@ export const Projects = () => {
                                 <Box position={"relative"} bg="white" h={150} role="group" overflow="hidden" borderRadius={10}>
                                     <Image pos={"absolute"} w="100%" h="100%" src={p.img} alt={p.name} objectFit={"contain"} opacity={1} transition="transform 0.3s ease-in-out" _groupHover={{ opacity: 0.3, transform: "scale(1.1)" }} />
                                     <Flex h="100%" align={"center"} justify={"center"} display={"none"} _groupHover={{ display: "flex" }}>
-                                        <Button variant={"ghost"} colorScheme="none" rightIcon={<BiLinkExternal />} onClick={() => window.open(p.link)}>Preview</Button>
+                                        <Button variant={"ghost"} colorScheme="none" rightIcon={<BiLinkExternal />} onClick={() => p.link ? window.open(p.link) : showPreview(p.path)}>Preview</Button>
                                     </Flex>
                                 </Box>
                                 <Flex mt={5} flexWrap={"wrap"}>
