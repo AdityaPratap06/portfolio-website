@@ -3,6 +3,7 @@ import { Box, Image } from "@chakra-ui/react";
 import { map } from "lodash";
 import { useRouter } from "next/router";
 import React from "react";
+import { Error404 } from "../Home/404Error";
 
 export const ProjectPreview = () => {
     const { query } = useRouter()
@@ -27,16 +28,20 @@ export const ProjectPreview = () => {
     ]
     return (
         <Box>
-            <CenterX>
-                <Box pb={5}>
-                    {map((query.slug === "coaching-log" ? coachinglog : query.slug === "newsfeed-website" ? newsFeed : ''), img => (
-                        img.url ?
-                            <Image mt={5} border={"1px solid"} borderColor={"gray.200"} borderRadius={10} src={img.url} alt="" />
-                            :
-                            null
-                    ))}
-                </Box>
-            </CenterX>
+            {(query.slug === "coaching-log" || query.slug === "newsfeed-website") ?
+                <CenterX>
+                    <Box pb={5}>
+                        {map((query.slug === "coaching-log" ? coachinglog : query.slug === "newsfeed-website" ? newsFeed : ''), img => (
+                            img.url ?
+                                <Image mt={5} border={"1px solid"} borderColor={"gray.200"} borderRadius={10} src={img.url} alt="" />
+                                :
+                                null
+                        ))}
+                    </Box>
+                </CenterX>
+                :
+                <Error404 />
+            }
         </Box>
     )
 }
